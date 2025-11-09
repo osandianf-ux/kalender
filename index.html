@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalender Pribadi Saya</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="calendar-container">
+    <h1>🗓️ Kalender Pribadi</h1>
+    <div class="header">
+      <button id="prev-month">⟨</button>
+      <h2 id="month-year"></h2>
+      <button id="next-month">⟩</button>
+    </div>
+    <table id="calendar">
+      <thead>
+        <tr>
+          <th>Min</th><th>Sen</th><th>Sel</th><th>Rab</th>
+          <th>Kam</th><th>Jum</th><th>Sab</th>
+        </tr>
+      </thead>
+      <tbody id="calendar-body"></tbody>
+    </table>
+  </div>
+
+  <!-- Modal untuk menambah acara -->
+  <div id="event-modal" class="modal">
+    <div class="modal-content">
+      <span id="close-modal">&times;</span>
+      <h3 id="event-date"></h3>
+      <textarea id="event-text" placeholder="Tulis acara kamu di sini..."></textarea>
+      <button id="save-event">Simpan</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
